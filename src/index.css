@@ -1,0 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Normalize some styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.receiver{
+  display: flex;
+  justify-content: flex-start;
+}
+.sender{
+    display: flex;
+      justify-content: flex-end;
+}
