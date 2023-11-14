@@ -7,6 +7,7 @@ import logoUser from "./../assets/user-logo.png";
 const Komputer = () => {
   const imageUrl = "https://abb-bank.az/img/ibar-about-new-logo.svg";
   const [inputValue, setInputValue] = useState("");
+
   const [chat, setChat] = useState([]);
 
   const handleChange = (e) => {
@@ -57,7 +58,7 @@ const Komputer = () => {
         <div className="w-full d-flex h-75 flex-column justify-content-center align-items-center ">
           <div className="w-100 d-flex flex-column h-full ">
             <div className="sender">
-              <chat-bubble avatar={logoAdmin}>
+              <chat-bubble right avatar={logoAdmin}>
                 1.Kompüterin parolu dəyişmək və ya blokdan çıxartmaq <br /> 2.
                 Yeni kompüter sifariş edilməsi
                 <br />
@@ -68,11 +69,32 @@ const Komputer = () => {
             {chat.map((message, index) => (
               <div
                 className={message.type === "answer" ? "sender" : "receiver"}>
-                <chat-bubble
+                {message.type === "answer" ? (
+                  <chat-bubble
+                    className={
+                      message.type === "answer" ? "sender" : "receiver"
+                    }
+                    avatar={message.type === "answer" ? logoAdmin : logoUser}
+                    key={index}>
+                    {message.content}
+                  </chat-bubble>
+                ) : (
+                  <chat-bubble
+                    right
+                    className={
+                      message.type === "answer" ? "sender" : "receiver"
+                    }
+                    avatar={message.type === "answer" ? logoAdmin : logoUser}
+                    key={index}>
+                    {message.content}
+                  </chat-bubble>
+                )}
+                {/* <chat-bubble
+                  className={message.type === "answer" ? "sender" : "receiver"}
                   avatar={message.type === "answer" ? logoAdmin : logoUser}
                   key={index}>
                   {message.content}
-                </chat-bubble>
+                </chat-bubble> */}
               </div>
             ))}
           </div>

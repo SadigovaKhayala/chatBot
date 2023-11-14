@@ -1,7 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./../styles/Chatbot.scss";
+import db from "../data.json";
 
 const ChatBot = () => {
   const [categorySelect, SetcategorySelect] = useState("");
@@ -20,6 +21,23 @@ const ChatBot = () => {
     categorySelect == 2 && navigate("/printer");
     categorySelect == 3 && navigate("/email");
   };
+
+  ///test
+  async function createPost() {
+    const res = await fetch(" http://localhost:3000/posts", {
+      method: "POST",
+      body: JSON.stringify({
+        author: "khayala",
+        content: "test ",
+      }),
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+
+    const data = await res.json;
+    console.log(data);
+  }
   return (
     <>
       <div className="backgroundImg">
@@ -62,6 +80,15 @@ const ChatBot = () => {
                 id="button-addon2"
                 type="submit">
                 Submit
+              </button>
+              <button
+                onClick={() => {
+                  createPost();
+                }}
+                className="btn btn-light"
+                id="button-addon3"
+                type="submit">
+                add data
               </button>
             </div>
           </form>
