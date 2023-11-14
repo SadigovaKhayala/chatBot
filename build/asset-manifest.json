@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.254fcf4f.css",
+    "main.js": "/static/js/main.7620ac49.js",
+    "static/media/user-logo.png": "/static/media/user-logo.90571f0df4b89e3943e3.png",
+    "static/media/logo-abb.svg": "/static/media/logo-abb.9f5d7d1cb33d300a75d58dd26c88ef00.svg",
+    "index.html": "/index.html",
+    "main.254fcf4f.css.map": "/static/css/main.254fcf4f.css.map",
+    "main.7620ac49.js.map": "/static/js/main.7620ac49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.254fcf4f.css",
+    "static/js/main.7620ac49.js"
+  ]
+}
