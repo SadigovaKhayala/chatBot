@@ -1,4 +1,24 @@
 [build]
-  base = "frontend" # Set the base directory to 'frontend'
-  command = "npm run build" # Your build command
-  publish = "frontend/build" # Directory containing the built files
+  command = "npm run build" 
+  publish = "dist/"          
+  functions = "lambda/"      
+
+[[redirects]]
+  from = "/old-url"
+  to = "/new-url"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=3600"
+
+[build.environment]
+  NODE_ENV = "production"
+  API_KEY = "your_api_key"
+
+[experimental]
+  branch-deploys = true
+  deploy-preview = true
