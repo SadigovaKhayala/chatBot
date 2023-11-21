@@ -3,17 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@material-ui/core": "^4.12.4",
+    "@mui/material": "^5.14.18",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.11.1",
     "bootstrap": "^5.3.2",
     "chat-bubble": "^1.5.0",
+    "express": "^4.18.2",
+    "formik": "^2.4.5",
+    "i": "^0.3.7",
+    "input-material-ui": "^3.0.0",
+    "npm": "^10.2.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-chat-bubble": "^0.8.7",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-native-typing-animation": "^0.1.5",
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-type-animation": "^3.2.0",
     "sass": "^1.69.5",
     "wc-bubble": "^0.1.5",
     "web-vitals": "^2.1.4"
@@ -41,5 +55,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

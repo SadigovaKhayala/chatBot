@@ -1,14 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Normalize some styles */
-body {
-  font-family: Arial, sans-serif;
-}
+
 
 .receiver{
   display: flex;
@@ -17,4 +20,16 @@ body {
 .sender{
     display: flex;
       justify-content: flex-end;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
