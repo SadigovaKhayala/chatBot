@@ -100,7 +100,7 @@ const Projects = () => {
         <div className="navlinksLangugage">
           <nav className="nav-links">
             <a href="/about">{currentTranslation.aboutUs}</a>
-            <a href="#projects">{currentTranslation.projects}</a>
+            <a href="/projects">{currentTranslation.projects}</a>
             <a href="/services">{currentTranslation.services}</a>
             <a href="/contact">{currentTranslation.corporateContacts}</a>
           </nav>
