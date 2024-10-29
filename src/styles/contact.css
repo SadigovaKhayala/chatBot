@@ -1,0 +1,62 @@
+.contactContainer {
+  height: 80vh;
+}
+.contactCard {
+  width: 60vw !important;
+  color: #1e2f4d;
+  height: 55vh !important;
+  margin: 10vh 1rem 1rem 1rem !important;
+  border: 1px solid transparent;
+  padding: 1rem !important;
+  border-radius: 10px;
+  background-color: #b2c0d2a2;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.contactCard h2 {
+  color: #1e2f4d;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  padding: 1rem;
+}
+.contactInfo div a {
+  text-decoration: none;
+  color: #1e2f4d;
+}
+
+.contactInfo {
+  font-size: 19px;
+  font-weight: 600;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.contactInfo div {
+  width: 30vw;
+  background-color: #b2c0d2a2;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1e2f4d !important;
+  cursor: pointer;
+}
+.contactInfo div:hover {
+  color: #ffb101 !important;
+  background-color: #304369;
+  transition: all 0.3s;
+}
+.contactInfo div:hover a {
+  color: #ffb101;
+}

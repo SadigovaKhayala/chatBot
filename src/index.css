@@ -1,25 +1,19 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 
-
-
-.receiver{
+.receiver {
   display: flex;
   justify-content: flex-start;
 }
-.sender{
-    display: flex;
-      justify-content: flex-end;
+.sender {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -30,6 +24,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }

@@ -1,0 +1,43 @@
+.navbarSecondary {
+  background-color: #b2c0d2;
+}
+.aboutContainer {
+  height: 80vh;
+}
+.footerSecondary {
+  background-color: #b2c0d2 !important;
+  color: #1e2f4d;
+}
+.contact-infos div:first-child {
+  padding-right: 1rem;
+  border-right: 1px solid #1e2f4d;
+}
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: 80vh;
+}
+.aboutContainer div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutContainer div:last-child img {
+  width: 40vw;
+}
+
+.aboutContainer div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  font-size: 19px;
+}
+.bgImg2 img {
+  right: -400px !important;
+  top: 7rem;
+}

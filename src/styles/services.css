@@ -1,0 +1,84 @@
+.projectContainer {
+  padding-top: 1rem !important;
+}
+.serviceCard {
+  width: 60vw !important;
+  color: #1e2f4d;
+  height: 15vh !important;
+  margin: 1rem !important;
+  border: 1px solid transparent;
+
+  padding: 2rem 3rem !important;
+  border-radius: 10px;
+  background-color: #b2c0d2a2;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.serviceCard div:last-child {
+  width: 52vw;
+}
+.serviceIcon {
+  width: 20vw !important;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end !important;
+  justify-content: center !important;
+  padding-right: 0 !important;
+}
+.serviceCard div img {
+  width: 5vw !important;
+}
+
+.serviceCard h2 {
+  color: #1e2f4d;
+  font-weight: 700;
+  font-size: 24px;
+}
+.serviceCard h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+ul {
+  padding: 0 !important;
+}
+.serviceCard li {
+  font-size: 16px;
+  text-align: left;
+  margin-left: 1rem;
+  padding-left: 0;
+}
+
+/* Keyframes for left-to-right background animation */
+@keyframes bgTransitionLeftToRight {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.serviceCard {
+  width: 60vw !important;
+  color: #1e2f4d;
+  height: 30vh;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #e8b02ed8 50%, #b2c0d2a2 50%);
+  background-size: 200% 100%;
+  background-position: right; /* Start from the right */
+  transition: background-position 0.9s ease; /* Smooth left-to-right transition */
+  display: flex;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  border: none !important;
+  color: #1e2f4d !important;
+  cursor: pointer;
+}
+
+/* On hover, shift background position to left for left-to-right effect */
+.serviceCard:hover {
+  background-position: left;
+  color: white; /* Optional: change text color for better contrast */
+}
